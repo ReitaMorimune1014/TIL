@@ -25,22 +25,22 @@ HRクラウド 課題:'fuelphpの使い方学習'<br>
 HRクラウド 課題:'ログイン機能構築'<br>
 
 【コード】<br>
-`
-$user = DB::select()<br>
-                ->from('users')<br>
-                ->where('username', $username)<br>
-                ->execute()<br>
-                ->current();<br>
-            if ($user && password_verify($password, $user['password'])) {<br>
-                Session::set('user_id', $user['id']);<br>
-                Response::redirect('/');<br>
-            } else {<br>
-                echo 'login failed';<br>
-            }<br>
-            exit;<br>
-        }<br>
-        return View::forge('login/index');<br>
-`
+```
+$user = DB::select()
+                ->from('users')
+                ->where('username', $username)
+                ->execute()
+                ->current();
+            if ($user && password_verify($password, $user['password'])) {
+                Session::set('user_id', $user['id']);
+                Response::redirect('/');
+            } else {
+                echo 'login failed';
+            }
+            exit;
+        }
+        return View::forge('login/index');
+```
 
 【学び・Why】<br>
 初めてdockerを使ったので、操作がいろいろあり複雑だった。<br>
