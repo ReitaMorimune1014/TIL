@@ -17,6 +17,37 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年5月の記録
+### 5月8日
+【やったこと】<br>
+HRクラウド 課題:'dockerの使い方学習'<br>
+HRクラウド 課題:'mysqlの使い方学習'<br>
+HRクラウド 課題:'fuelphpの使い方学習'<br>
+HRクラウド 課題:'ログイン機能構築'<br>
+
+【コード】<br>
+`
+$user = DB::select()
+                ->from('users')
+                ->where('username', $username)
+                ->execute()
+                ->current();
+            if ($user && password_verify($password, $user['password'])) {
+                Session::set('user_id', $user['id']);
+                Response::redirect('/');
+            } else {
+                echo 'login failed';
+            }
+            exit;
+        }
+        return View::forge('login/index');
+`
+
+【学び・Why】<br>
+初めてdockerを使ったので、操作がいろいろあり複雑だった。<br>
+そのため、これは何をしているのかを常に意識して覚えていった<br>
+AIでログイン機能を作ったことがあったが、実際どうなっているか知らなかったのでとても興味深く学ぶことができた<br>
+DBは、大学で習っていたのでそこまで理解が難しくなかった<br>
+
 ### 5月7日
 【やったこと】<br>
 HRクラウド 課題:'UI設計のフレームワーク作成'<br>
