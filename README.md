@@ -17,6 +17,20 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年5月の記録
+### 5月10日
+【やったこと】<br>
+HRクラウド 課題:'非同期処理（Knockout.js）'<br>
+
+【コード】<br>
+```
+<script src="https://cdn.jsdelivr.net/npm/knockout@3.5.1/build/output/knockout-latest.js"></script>
+    <script src="/assets/js/todo.js"></script>
+```
+
+【学び・Why】<br>
+まずknocoutがどのようなものかを学んだ。いちいちjsを書かなくても値が更新されたのを確認したらviewを更新してくれるもの<br>
+DOMの操作を減らすことができるので、何回も書く必要や、保守性も上がるもの<br>
+
 ### 5月9日
 【やったこと】<br>
 HRクラウド 課題:'グループ機能作成'<br>
