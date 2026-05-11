@@ -17,6 +17,37 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年5月の記録
+### 5月11日
+【やったこと】<br>
+HRクラウド 課題:'非同期処理（Knockout.js）続き'<br>
+
+【コード】<br>
+```
+self.deleteTodo = async function (todo) {
+        if (!confirm('削除しますか？')) {
+            return;
+        }
+        try {
+            const response = await fetch('/todo/ajax_delete/' + todo.id, {
+                method: 'POST'
+            });
+            const data = await response.json();
+            if (!data.success) {
+                alert(data.message);
+                return;
+            }
+            self.todos.remove(todo);
+        } catch (error) {
+            console.error(error);
+            alert('削除に失敗しました');
+        }
+```
+
+【学び・Why】<br>
+エラーが連発して、なにがエラーになっているのか分からなくなった。<br>
+そのため、コンソールログやlogファイルの中を見て、１つ１つエラーを解消していった。<br>
+まだ、表示部分がおかしいのでViewの部分でエラーが起きてないか確認をしてみる<br>
+
 ### 5月10日
 【やったこと】<br>
 HRクラウド 課題:'非同期処理（Knockout.js）'<br>
