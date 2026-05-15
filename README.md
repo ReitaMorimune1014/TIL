@@ -17,6 +17,37 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年5月の記録
+### 5月15日
+【やったこと】<br>
+HRクラウド 課題:'レビューから修正'<br>
+
+【コード】<br>
+```
+変更前
+public function action_delete($id)
+{
+    Model_Todo::delete_todo($id);
+
+    return Response::redirect('/todo');
+}
+
+変更後
+public function post_delete($id)
+{
+    $this->require_csrf();
+
+    Model_Todo::delete_todo($id);
+
+    return Response::redirect('/todo');
+}
+```
+
+【学び・Why】<br>
+この部分は、GETで削除しているので、URLアクセスだけで削除することができる。<br>
+そのため、削除はPOST形式にする<br>
+またここにCSRFもつけるようにする。<br>
+
+
 ### 5月12日
 【やったこと】<br>
 HRクラウド 課題:'テスト'<br>
