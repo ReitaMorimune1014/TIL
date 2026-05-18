@@ -17,6 +17,45 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年5月の記録
+### 5月18日
+【やったこと】<br>
+Udemy React講座：`Reactとは何なのか？`の学習開始<br>
+Udemy React講座：`Reactコンテンツについて`の学習<br>
+Udemy React講座：`Reactについて`の学習<br>
+Udemy React講座：`CodeSandboxをセットアップ`の学習<br>
+Udemy React講座：`JSXの基本`の学習<br>
+Udemy React講座：`Reactアプリの基本構造`の学習<br>
+Udemy React講座：`初めてのコンポーネント`の学習<br>
+
+【コード】<br>
+```
+import "./styles.css";
+
+function Greeter() {
+  return <h1>HELLO!!!</h1>;
+}
+
+function Dog() {
+  return <p>wan</p>;
+}
+
+export default function App() {
+  return (
+    <div className="App">
+      <Greeter />
+      <Dog />
+      <Greeter />
+      <Greeter />
+      <Greeter />
+    </div>
+  );
+}
+```
+
+【学び・Why】<br>
+Reactとは、コンポーネントを作成、管理、再利用しながらUIを構築するJSのライブラリである。<br>
+Reactを使う理由は、パーツごとに分けるコンポーネント指向によって、開発効率、保守性が向上するから<br>
+
 ### 5月17日
 【やったこと】<br>
 HRクラウド 課題:'レビューから修正2'<br>
