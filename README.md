@@ -17,6 +17,30 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年5月の記録
+### 5月21日
+【やったこと】<br>
+Udemy React講座：`JSXについて`の学習<br>
+Udemy React講座：`コンポーネントのimportとexport`の学習<br>
+Udemy React講座：`JSXのルール`の学習<br>
+Udemy React講座：`Reactフラグメント`の学習<br>
+
+【コード】<br>
+```
+Greeter.js
+export default function Greeter(){
+  return <h1>HELLO!</h1>;
+}
+
+App.js
+import Greeter form './Greeter'
+
+```
+
+【学び・Why】<br>
+App.jsに責務が集中して可動性や、保守性が悪くならないようにコンポーネントごとにファイルを分ける方がよい。<br>
+呼び出す時はimport,送るときはexportだということ<br>
+divで囲み、それをexportするとdivで囲まれたものがそのまま出てくる。囲みを表示しないようにするために<></>で囲むことができる（フラグメント）<br>
+
 ### 5月20日
 【やったこと】<br>
 HRクラウド 課題:'合格判定ミーティング'<br>
