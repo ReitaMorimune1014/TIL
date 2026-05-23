@@ -1,4 +1,25 @@
 ## 📅 2026年5月の記録
+### 5月23日
+【やったこと】<br>
+Udemy React講座：`JSX内でjsを使う`の学習<br>
+Udemy React講座：`さいころコンポーネントを作ろう`の学習<br>
+Udemy React講座：`コンポーネントの分割`の学習<br>
+
+【コード】<br>
+```
+export default function Die() {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    return <h1>さいころの出目： { roll }</h1>
+}
+
+imoprt Die form './Die'
+```
+
+【学び・Why】<br>
+コンポーネントを分割するのは、再利用しやすくするためである。<br>
+小さいコンポーネントを組み合わせて、大きいコンポーネントを作ることができる。<br>
+
+
 ### 5月21日
 【やったこと】<br>
 Udemy React講座：`JSXについて`の学習<br>
