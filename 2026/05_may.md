@@ -1,4 +1,20 @@
 ## 📅 2026年5月の記録
+### 5月24日
+【やったこと】<br>
+Udemy React講座：`コンポーネントにスタイルをあてる`の学習<br>
+Udemy React講座：`ランダムポケモン演習`の学習<br>
+Udemy React講座：`JSXについて`の学習終了<br>
+
+【コード】<br>
+```
+return <h2 className="Die">さいころの出目： {roll}</h2>;
+```
+
+【学び・Why】<br>
+コンポーネントにcssを当てるときには、classではなくclassNameを使うようにする。<br>
+その時には、importを使いcssファイルを読み込む<br>
+
+
 ### 5月23日
 【やったこと】<br>
 Udemy React講座：`JSX内でjsを使う`の学習<br>
