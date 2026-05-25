@@ -1,4 +1,27 @@
 ## 📅 2026年5月の記録
+### 5月25日
+【やったこと】<br>
+Udemy React講座：`viteでReactのローカル開発`の学習開始<br>
+Udemy React講座：`ローカル環境でのReactアプリ`の学習<br>
+Udemy React講座：`Create React Appについて`の学習<br>
+Udemy React講座：`Viteの概要`の学習<br>
+
+【コード】<br>
+```
+import './Chicken.css';
+
+function Chicken() {
+    return <p className="chicken">こけっここー</p>
+}
+
+export default Chicken;
+```
+
+【学び・Why】<br>
+ローカル環境で、Reactを使う方法を学んだ<br>
+viteは、以前使われていたCreate React Appよりも、使われるようになっている<br>
+
+
 ### 5月24日
 【やったこと】<br>
 Udemy React講座：`コンポーネントにスタイルをあてる`の学習<br>
