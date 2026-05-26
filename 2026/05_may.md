@@ -1,4 +1,25 @@
 ## 📅 2026年5月の記録
+### 5月26日
+【やったこと】<br>
+Udemy React講座：`Propsを学ぼう！`の学習開始<br>
+Udemy React講座：`Propsとは？`の学習<br>
+
+【コード】<br>
+```
+App.jsx
+<Greeter person="Ringo" />
+Greeter.jsx
+export default function Greeter({person}) {
+    return (
+        <h1>Hello, {person}!</h1>
+    )
+}
+```
+
+【学び・Why】<br>
+Propsを使うことで、コンポーネントごとに標示するものを変更することができる。<br>
+これを使うことで、毎回値を設定しなくていいので手間を省くことができる。<br>
+
 ### 5月25日
 【やったこと】<br>
 Udemy React講座：`viteでReactのローカル開発`の学習開始<br>

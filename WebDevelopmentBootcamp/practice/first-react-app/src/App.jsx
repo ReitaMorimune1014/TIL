@@ -1,14 +1,14 @@
 import './App.css'
 import Chicken from './Chicken'
 import './Chicken.css'
+import Greeter from './Greeter'
 
 function App() {
 
   return (
     <div>
-      <Chicken />
-      <Chicken />
-      <Chicken />
+      <Greeter person="Ringo"/>
+      
     </div>
   )
 }
