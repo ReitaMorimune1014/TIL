@@ -1,4 +1,26 @@
 ## 📅 2026年5月の記録
+### 5月27日
+【やったこと】<br>
+Udemy React講座：`文字列以外のProps`の学習<br>
+Udemy React講座：`Propsのデフォルト値`の学習<br>
+Udemy React講座：`Propsに配列やオブジェクトを渡す`の学習<br>
+
+【コード】<br>
+```
+export default function Die({numSides = 6}) {
+    const num = Math.floor(Math.random() * numSides) + 1;
+    return (
+        <div>
+            <p>{numSides}面のさいころの出目は{num}です</p>
+        </div>
+    )
+}
+```
+
+【学び・Why】<br>
+jsなどと同じように、デフォルト値を設定しておくことで、値を渡さない場合デフォルトを標示することが分かった。<br>
+今回では、numSidesを６と設定しておくことで、毎回設定しなくても６面さいころとなるので、再利用性が向上している。<br>
+
 ### 5月26日
 【やったこと】<br>
 Udemy React講座：`Propsを学ぼう！`の学習開始<br>

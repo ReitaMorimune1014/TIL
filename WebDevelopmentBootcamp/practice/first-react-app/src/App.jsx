@@ -2,13 +2,14 @@ import './App.css'
 import Chicken from './Chicken'
 import './Chicken.css'
 import Greeter from './Greeter'
+import Die from './Die'
+import ListPicker from './ListPicker'
 
 function App() {
 
   return (
     <div>
-      <Greeter person="Ringo"/>
-      
+      <ListPicker values={['Apple', 'Banana', 'Cherry']}/>
     </div>
   )
 }
