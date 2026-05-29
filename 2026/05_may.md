@@ -1,4 +1,32 @@
 ## 📅 2026年5月の記録
+### 5月29日
+【やったこと】<br>
+Udemy React講座：`配列をレンダリングしてみよう`の学習<br>
+Udemy React講座：`スロットマシン演習問題`の学習<br>
+Udemy React講座：`買い物リストを作ってみよう`の学習開始<br>
+Udemy React講座：`買い物リストについて`の学習<br>
+Udemy React講座：`Key Propsについて`の学習<br>
+
+【コード】<br>
+```
+<div>
+            <h1>Shopping List</h1>
+            <ul>
+                {items.map(i => (
+                    <li key={i.id}
+                    style={{color: i.completed ? 'green' : 'red', 
+                        textDecoration: i.completed ? 'line-through' : 'none'}}>{i.items} - {i.quantity}</li>
+                ))}
+            </ul>
+        </div>
+```
+
+【学び・Why】<br>
+配列をレンダリングするには、mapメソッドを使い1つ1つをliの中に入れている。<br>
+今回作った買い物リストは、動的にスタイルを当てて行った。その時参考演算子を用いて色を変えたりlineをつけたりした<br>
+mapメソッドを使うことで、配列すべてを書く手間を省いている。<br>
+
+
 ### 5月28日
 【やったこと】<br>
 Udemy React講座：`Reactで条件分岐`の学習<br>
