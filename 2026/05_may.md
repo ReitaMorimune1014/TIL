@@ -1,4 +1,31 @@
 ## 📅 2026年5月の記録
+### 5月28日
+【やったこと】<br>
+Udemy React講座：`Reactで条件分岐`の学習<br>
+Udemy React講座：`React Developer Tools`の学習<br>
+Udemy React講座：`動的なスタイルを当ててみよう`の学習<br>
+
+【コード】<br>
+```
+~~~
+const isWinner = num1 === num2;
+    const style = {color: isWinner ? 'green' : 'red', fontSize: '20px'};
+    return (
+        <div className="double-dice" style={style}>
+            <h1>Double Dice</h1>
+            {isWinner ? <h2>勝ち</h2> : null}
+            <p>1つ目のさいころの出目は{num1}です</p>
+            <p>2つ目のさいころの出目は{num2}です</p>
+        </div>
+    )
+```
+
+【学び・Why】<br>
+Reactで条件分岐をするときは、{}内にjsをかけるので、参考演算子などを使うことで表現できる<br>
+また、styleをあてて動的な処理にする時には、styleを{}で渡している。<br>
+ちょっとしたことだが、isWinnerを先に判定することで、使いますことができ、Dry原則に沿っている。<br>
+
+
 ### 5月27日
 【やったこと】<br>
 Udemy React講座：`文字列以外のProps`の学習<br>
