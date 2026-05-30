@@ -1,4 +1,36 @@
 ## 📅 2026年5月の記録
+### 5月30日
+【やったこと】<br>
+Udemy React講座：`ShoppingListItemコンポーネントを作ろう`の学習<br>
+Udemy React講座：`レンタル施設の演習問題`の学習<br>
+Udemy React講座：`ESLintを設定しよう`の学習<br>
+Udemy React講座：`ProptTypesとは`の学習<br>
+Udemy React講座：`Reactのイベント処理`の学習開始<br>
+Udemy React講座：`Reactのイベント処理入門`の学習<br>
+
+【コード】<br>
+```
+レンタル施設演習
+        <div>
+            <h1>Property List</h1>
+            <ul>
+                {properties.map(p => (
+                    <PropertyListItem key={p.id} {...p} />
+                ))}
+            </ul>
+        </div>
+イベント処理
+        <div>
+            <h1>Clicker</h1>
+            <button onClick={() => console.log('Clicked')}>Click me</button>
+        </div>
+```
+
+【学び・Why】<br>
+コンポーネントの再利用性を高めるために、分割してさらに小さいコンポーネントを作成した<br>
+Reactでイベント処理をするときには、上のコードのように、buttonにonClickをつけそこにコールバック関数を書けばよい<br>
+生のjsでDOMをいじるより効率的にコーディングできた<br>
+
 ### 5月29日
 【やったこと】<br>
 Udemy React講座：`配列をレンダリングしてみよう`の学習<br>

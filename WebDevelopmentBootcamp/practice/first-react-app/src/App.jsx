@@ -8,6 +8,8 @@ import './App.css'
 // import ColorList from './ColorList'
 // import Slots from './Slots'
 import ShoppingList from './ShoppingList'
+import PropertyList from './PropertyList'
+import Clicker from './Clicker'
 
 const date = [
   {id: 1, items: '卵', quantity: 12, completed: false},
@@ -18,10 +20,19 @@ const date = [
   {id: 6, items: 'お酒', quantity: 1, completed: false},
 ]
 
+const properties = [
+  {id: 1, name: '砂丘の離れ', rating:4.9, price: 100000},
+  {id: 2, name: '切り立つ山の庵', rating:4.8, price: 333333},
+  {id: 3, name: '綺麗な森のお茶屋', rating:4.7, price: 222222},
+  {id: 4, name: '落ち葉が美しい森のお茶屋', rating:4.6, price: 666666},
+  {id: 5, name: '海のお茶屋', rating:4.5, price: 555555},
+  {id: 6, name: '温泉のお茶屋', rating:4.4, price: 444444},
+]
+
 function App() {
  return (
   <div>
-    <ShoppingList items={date}/>
+    <Clicker />
   </div>
  )
   
