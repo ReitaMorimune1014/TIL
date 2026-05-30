@@ -1,4 +1,35 @@
 ## 📅 2026年5月の記録
+### 5月31日 
+【やったこと】<br>
+Udemy React講座：`クリック以外のイベント`の学習<br>
+Udemy React講座：`イベントオブジェクト`の学習<br>
+Udemy React講座：`クリックを使った演習`の学習<br>
+Udemy React講座：`ReactのState入門`の学習開始<br>
+Udemy React講座：`State入門`の学習<br>
+Udemy React講座：`useStateを使ってみよう`の学習<br>
+Udemy React講座：`Toggleコンポーネントを作ろう`の学習<br>
+Udemy React講座：`複数のStateを扱う`の学習<br>
+Udemy React講座：`useStateとレンダリングの関係`の学習<br>
+
+【コード】<br>
+```
+const [count, setCount] = useState(0)
+    const changeCount = () => {
+        setCount(count + 1)
+    }
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={changeCount}>Click me</button>
+        </div>
+    );
+```
+
+【学び・Why】<br>
+Stateを使うことで、変数などに変更が起きると変更部分を非同期で再表示してくれる<br>
+booleanも管理でき、Reactで作成されているサイトで使われるいいねボタンはuseStateで管理されている<br>
+
+
 ### 5月30日
 【やったこと】<br>
 Udemy React講座：`ShoppingListItemコンポーネントを作ろう`の学習<br>

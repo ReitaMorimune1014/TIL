@@ -10,6 +10,11 @@ import './App.css'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
 import Clicker from './Clicker'
+import Form from './Form'
+import Counter from './Counter'
+import Toggler from './Toggler'
+import TogglerCounter from './TogglerCounter'
+import ColorBoxGrid from './ColorBoxGrid'
 
 const date = [
   {id: 1, items: '卵', quantity: 12, completed: false},
@@ -29,10 +34,12 @@ const properties = [
   {id: 6, name: '温泉のお茶屋', rating:4.4, price: 444444},
 ]
 
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+
 function App() {
  return (
   <div>
-    <Clicker />
+    <ColorBoxGrid colors={colors} />
   </div>
  )
   
