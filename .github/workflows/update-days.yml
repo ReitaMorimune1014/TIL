@@ -1,0 +1,32 @@
+name: Update Days Count
+
+on:
+  schedule:
+    - cron: '0 15 * * *'  # 毎日 日本時間 0時（UTC 15時）に実行
+  workflow_dispatch:       # 手動実行も可能
+
+jobs:
+  update-days:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 記録開始からの日数を計算
+        id: days
+        run: |
+          START_DATE="2026-03-13"
+          TODAY=$(date +%Y-%m-%d)
+          DAYS=$(( ($(date -d "$TODAY" +%s) - $(date -d "$START_DATE" +%s)) / 86400 + 1 ))
+          echo "count=$DAYS" >> $GITHUB_OUTPUT
+
+      - name: READMEを更新
+        run: |
+          sed -i 's|<!-- DAYS -->[0-9]*<!-- /DAYS -->|<!-- DAYS -->${{ steps.days.outputs.count }}<!-- /DAYS -->|' README.md
+
+      - name: コミット & プッシュ
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --staged --quiet || git commit -m "📅 ${{ steps.days.outputs.count }}日目"
+          git push
