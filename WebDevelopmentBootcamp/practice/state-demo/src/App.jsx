@@ -3,12 +3,13 @@ import Counter from './Counter'
 import Dumbo from './Dumbo'
 import ScoreKeeper from './ScoreKeeper'
 import EmojiClicker from './EmojiClicker'
+import Box from './Box'
+import BoxGrid from './BoxGrid'
 
 function App() {
   return (
     <div>
-       <ScoreKeeper numPlayers={Math.floor(Math.random() * 10) + 1} />
-        
+       <BoxGrid />
     </div>
   )
 }

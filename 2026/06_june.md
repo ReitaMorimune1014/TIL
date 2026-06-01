@@ -1,4 +1,48 @@
 ## 📅 2026年6月の記録
+### 6月2日 
+【やったこと】<br>
+Udemy React講座：`コンポーネント設計`の学習開始<br>
+Udemy React講座：`Lucky7の紹介`の学習<br>
+Udemy React講座：`コンポーネントを設計しよう`の学習<br>
+Udemy React講座：`さいころのコンポーネントを作る`の学習<br>
+Udemy React講座：`Luckyコンポーネントを作ろう`の学習<br>
+Udemy React講座：`StateWPropsに渡す`の学習<br>
+Udemy React講座：`関数をPropsに渡す`の学習<br>
+Udemy React講座：`Stateを更新する関数をPropsに渡す`の学習<br>
+Udemy React講座：`Stateを更新する関数を使いこなそう`の学習<br>
+
+【コード】<br>
+```
+export default function BoxGrid() {
+    const [boxes,setBoxes] = useState([false,false,false,false,false,false])
+    const resetBoxes = () => {
+        setBoxes([false,false,false,false,false,false])
+    }
+    const toggleBox = (clickedIndex) => {
+        setBoxes((previousBoxes) =>
+            previousBoxes.map((boxIsActive, currentIndex) =>
+                currentIndex === clickedIndex
+                    ? !boxIsActive
+                    : boxIsActive
+            )
+        )
+    }
+    return (
+        <div>
+            {boxes.map((box, index) => (
+                <Box key={index} 
+                toggle={() => toggleBox(index)}
+                isActive={box}/>
+            ))}
+            <button onClick={resetBoxes}>Reset</button>
+        </div>
+    )
+```
+
+【学び・Why】<br>
+なぜ関数をPropsで渡すのかは、下位コンポーネントでStateを管理するのではなく、判定した結果を制御コンポーネントに渡して、State管理するからである。<br>
+この設計により、UIと制御を分けることができ、責務が明確になっている。<br>
+上のコードでいうと、下位コンポーネントBoxを呼ぶときに、booleanや関数を渡している。<br>
 
 ### 6月1日 
 【やったこと】<br>
