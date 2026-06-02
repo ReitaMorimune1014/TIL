@@ -1,4 +1,5 @@
 import { useState } from "react";
+import RHFForm from "./RHFForm";
 import ShoppingListForm from "./ShoppingListForm";
 
 export default function ShoppingList() {
@@ -27,5 +28,5 @@ export default function ShoppingList() {
         }
         setItems((currItems) => [...currItems, correctedItem]);
     };
-    return <ShoppingListForm addItem={addItem} />;
+    return <RHFForm />;
 }

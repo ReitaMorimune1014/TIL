@@ -1,4 +1,70 @@
 ## 📅 2026年6月の記録
+### 6月3日 
+【やったこと】<br>
+Udemy React講座：`ReactでFormを作ろう`の学習開始<br>
+Udemy React講座：`制御コンポーネント`の学習<br>
+Udemy React講座：`htmlFor属性について`の学習<br>
+Udemy React講座：`複数のinputを使おう`の学習<br>
+Udemy React講座：`登録フォームの改善`の学習<br>
+Udemy React講座：`Computedプロパティ`の学習<br>
+Udemy React講座：`ShoppingListFromコンポーネント`の学習<br>
+～～～
+Udemy React講座：`React Hook Formについて`の学習<br>
+Udemy React講座：`useEffect`の学習開始<br>
+Udemy React講座：`useEffectの使い方`の学習<br>
+Udemy React講座：`useEffectの依存配列`の学習<br>
+Udemy React講座：`APIから初期データを取得する`の学習<br>
+Udemy React講座：`Githubプロフィール検索機能`の学習<br>
+Udemy React講座：WevDevelopmentBootcapmのReact学習終了<br>
+自己学習 成果物作成:いままでならったReactの知識を使い開発<br>
+
+【コード】<br>
+```
+react-hook-form 抜粋
+import { useForm } from "react-hook-form";
+
+export default function RHFForm() {
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
+
+    console.log(watch("example"));
+
+    return (
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <input defaultValue="test" {...register("example")} />
+            <input {...register("exampleRequired", { required: true })} />
+            
+            {errors.exampleRequired && <span>This field is required</span>}
+            <input type="submit" />
+        </form>
+    );
+}
+
+github search 抜粋
+const [username, setUsername] = useState("");
+    const [profile, setProfile] = useState({ data: null, isLoading: false });
+
+    useEffect(
+        function feachUserOnUsernameChange() {
+            async function fetchUser() {
+                const userResult = await axios.get(`${BASE_URL}${username}`);
+                setProfile({ data: userResult.data, isLoading: false });
+            }
+            fetchUser();
+        },
+        [username]
+    );
+```
+
+【学び・Why】<br>
+React Hook Formはregisterを使い、inputを登録するだけで、バリデーションができる。<br>
+useEffectの後ろにつけるものが変更されること（依存関係）により、動作するもの。<br>
+APIと組み合わせることで、ユーザーが操作によってデータを取得できる。<br>
+Reactがちゃんと学習できているかどうか、taskアプリを作成して確認をした<br>
+React,JS,React Hook Form,axios,uuidを使った<br>
+作りながらコンポーネントの責務や、どこでState管理するかなどを考えてしまったので、効率的には作成できなかった<br>
+https://github.com/ReitaMorimune1014/react-task-app
+
 ### 6月2日 
 【やったこと】<br>
 Udemy React講座：`コンポーネント設計`の学習開始<br>
