@@ -1,4 +1,18 @@
 ## 📅 2026年6月の記録
+### 6月4日 
+【やったこと】<br>
+Udemy NewReact講座：`なぜReactなのか`の学習<br>
+Udemy NewReact講座：`コースで使用するVSCodeの拡張機能を準備しよう`の学習<br>
+Udemy NewReact講座：`資材のダウンロード`の学習<br>
+Udemy NewReact講座：`Reactを動かしてみよう`の学習<br>
+
+【一言で言うと】<br>
+Reactとは、JSのライブラリで現在最も使われるモダンな技術である。<br>
+
+【学び・Why】<br>
+Reactはコンポーネント単位で画面を分割して開発するもの。<br>
+State管理によって画面を自動的に更新できるため、DOMを直接いじる必要が少なくなる<br>
+
 ### 6月3日 
 【やったこと】<br>
 Udemy React講座：`ReactでFormを作ろう`の学習開始<br>
