@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export default function ProfileSearchForm({ search }) {
     const [term, setTerm] = useState("");
     function handleSearchChange(e) {
