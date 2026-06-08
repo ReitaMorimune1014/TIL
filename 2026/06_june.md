@@ -1,4 +1,24 @@
 ## 📅 2026年6月の記録
+### 6月8日 
+【やったこと】<br>
+Udemy NewReact講座：`Reactプロジェクトノ作成方法`の学習<br>
+Udemy NewReact講座：`コンポーネントにスタイルを当ててみよう`の学習<br>
+Udemy NewReact講座：`コンポーネントの分割方法`の学習<br>
+
+【コード】<br>
+```
+const Child = () => {
+    return (
+        <div className="component">
+            <List />
+        </div>
+    );
+}
+```
+
+【学び・Why】<br>
+classをつけるときには、HTMLのときはclassのみで良かったが、jsxでは予約語になっているので、classNameとする。<br>
+
 ### 6月5日 
 【やったこと】<br>
 Udemy NewReact講座：`Reactコンポーネントとはなに？`の学習<br>
