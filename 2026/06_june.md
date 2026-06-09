@@ -1,4 +1,16 @@
 ## 📅 2026年6月の記録
+### 6月9日 
+【やったこと】<br>
+Udemy NewReact講座：`不要なタグを出力しないFragmentの使い方`の学習<br>
+Udemy NewReact講座：`JSX内でJSコードを実行してみよう`の学習<br>
+Udemy NewReact講座：`propsでコンポーネントに値を渡してみよう`の学習<br>
+Udemy NewReact講座：`propsにいろいろな値を渡してみよう`の学習<br>
+
+【学び・Why】<br>
+Fragmentを使うことで、divなどを使わなくても、複数の要素を返せることを学んだ。<br>
+Propsを利用することで、親から子へデータを渡せることを学んだ。<br>
+
+
 ### 6月8日 
 【やったこと】<br>
 Udemy NewReact講座：`Reactプロジェクトノ作成方法`の学習<br>
