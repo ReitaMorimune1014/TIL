@@ -1,4 +1,34 @@
 ## 📅 2026年6月の記録
+### 6月10日 
+【やったこと】<br>
+コードテスト対策：'Setの使い方'の学習<br>
+コードテスト対策：'文字列を逆順に'の学習<br>
+コードテスト対策：'最頻値を求める'の学習<br>
+コードテスト対策：'共通を出す'の学習<br>
+コードテスト対策：'FazzBizz'の学習<br>
+
+【コード】<br>
+```
+Set
+return [...new Set(arr)];
+逆順
+return str.split('').reverse().join('');
+最頻値
+map[n] = (map[n] || 0) + 1;
+共通
+function intersection(a, b) {
+    const setB = new Set(b);
+    return a.filter(x => setB.has(x));
+}
+```
+
+【学び・Why】<br>
+Setを利用することで、簡潔、拘束に重複を消すことができる<br>
+文字列を、split,reverse,joinの順番に使うことで効率よく、逆順にできる<br>
+最頻値は、値があれば１，ないければ０を入れるというのを(map[n] || 0) + 1で表現している。<br>
+配列同士の共通を出す時には、片方をSetにして、has()で判定することで、表現している。
+
+
 ### 6月9日 
 【やったこと】<br>
 Udemy NewReact講座：`不要なタグを出力しないFragmentの使い方`の学習<br>
