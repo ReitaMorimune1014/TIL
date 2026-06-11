@@ -1,4 +1,71 @@
 ## 📅 2026年6月の記録
+### 6月11日 
+【やったこと】<br>
+コードテスト対策：'２番目に大きい値'の学習<br>
+コードテスト対策：'文字の出現回数'の学習<br>
+コードテスト対策：'１段階flatten'の学習<br>
+コードテスト対策：'オブジェクトのキー一覧'の学習<br>
+コードテスト対策：'配列の合計値（reduce）'の学習<br>
+
+【コード】<br>
+```
+// 6: 共通部分
+function intersection(a, b) {
+    const setB = new Set(b);
+    return a.filter(x => setB.has(x));
+}
+
+// 7: 2番目に大きい値
+function nextMaxNum(arr) {
+    const n = arr.slice().sort((a, b) => b - a);
+    return n[1];
+}
+
+// 8: 文字の出現回数
+function strCount(str, target) {
+    let count = 0;
+    for (const n of str) {
+        if (n === target) {
+            count++;
+        }
+    }
+    return count;
+}
+
+// 9: flatten（1段階）
+function flatten(arr) {
+    const result = [];
+    for (const item of arr) {
+        if (Array.isArray(item)) {
+            result.push(...item);
+        } else {
+            result.push(item);
+        }
+    }
+    return result;
+}
+
+// 10: Object.keys
+function objKey(obj) {
+    return Object.keys(obj);
+}
+
+// 11: reduce（合計）
+function sum(arr) {
+    return arr.reduce((sum, n) => sum + n, 0);
+}
+
+```
+
+【学び・Why】<br>
+共通部分は、Set、filterを組み合わせる。<br>
+２番目に大きい値は、sliceでコピー、b-aで降順にする<br>
+Array.isArray()で配列かどうかを判定<br>
+Object.keyでキーを取得<br>
+reduceは(sum,n) => sum + nをつかう。<br>
+
+
+
 ### 6月10日 
 【やったこと】<br>
 コードテスト対策：'Setの使い方'の学習<br>
