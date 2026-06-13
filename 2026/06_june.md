@@ -1,4 +1,28 @@
 ## 📅 2026年6月の記録
+### 6月13日 
+【やったこと】<br>
+コードテスト対策：'苦手克服問題'の学習<br>
+
+【コード】<br>
+```
+function getOdds(arr) {
+  const result = [];
+  for(const n of arr) {
+    if(n % 2 === 1) result.push(n);
+  }
+return result;
+}
+function getAverage(arr){
+  let sum = arr.reduce((sum,x) => sum+x,0);
+  let ave = sum / arr.length;
+  return ave;
+}
+```
+
+【学び・Why】<br>
+return忘れや、pushをせずに直接代入したりする、凡ミスがあった。<br>
+そのため、書いた後にコードを読んで確認する習慣をつける。<br>
+
 ### 6月12日 
 【やったこと】<br>
 コードテスト対策：'何も見ずに１０問解けるように'の学習<br>
