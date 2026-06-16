@@ -1,5 +1,26 @@
 ## 📅 2026年6月の記録
-### 6月15日 
+
+### 6月16日
+
+【やったこと】<br>
+Udemy NewReact講座：`インラインスタイルの使い方`の学習<br>
+Udemy NewReact講座：`インラインスタイルの注意点`の学習<br>
+
+【コード】<br>
+
+```
+    <div>
+      <button onClick={clickHandler} style={style}>ボタン</button>
+    </div>
+```
+
+【学び・Why】<br>
+インラインスタイルを使うことの注意点は、再利用性が悪くなるということだ。<br>
+今回のコードの例でいうと、毎回ボタンにstyleを当てなければいけない。<br>
+そのため、外部のcssを定義して、importしているのだと再確認した。<br>
+
+### 6月15日
+
 【やったこと】<br>
 Udemy NewReact講座：`特別なプロパティ―`の学習<br>
 Udemy NewReact講座：`propsの重要なルール`の学習<br>
@@ -14,17 +35,17 @@ Udemy NewReact講座：`ステート使用時の注意点`の学習<br>
 【一言で言うと】<br>
 useStateとは、変化を感知できる変数を作り、その値が更新されると自動で再レンダリングをするフックである。<br>
 
-
 【学び・Why】<br>
 propsは読み取り専用である。データの流れを親から子にだけにすることで、バクがどこで起きているか分かりやすくなる。<br>
 ステートの注意点は、非同期のため直後に値を見ても変更されていない。<br>
 
+### 6月13日
 
-### 6月13日 
 【やったこと】<br>
 コードテスト対策：'苦手克服問題'の学習<br>
 
 【コード】<br>
+
 ```
 function getOdds(arr) {
   const result = [];
@@ -44,7 +65,8 @@ function getAverage(arr){
 return忘れや、pushをせずに直接代入したりする、凡ミスがあった。<br>
 そのため、書いた後にコードを読んで確認する習慣をつける。<br>
 
-### 6月12日 
+### 6月12日
+
 【やったこと】<br>
 コードテスト対策：'何も見ずに１０問解けるように'の学習<br>
 コードテスト対策：'演習問題'の学習<br>
@@ -54,7 +76,8 @@ return忘れや、pushをせずに直接代入したりする、凡ミスがあ�
 そのため、演習問題でも、組み合わせを変えたりして対応できた。<br>
 ただ、タイプミスや凡ミスもあるので書き終わったら、コードを読むようにする<br>
 
-### 6月11日 
+### 6月11日
+
 【やったこと】<br>
 コードテスト対策：'２番目に大きい値'の学習<br>
 コードテスト対策：'文字の出現回数'の学習<br>
@@ -63,6 +86,7 @@ return忘れや、pushをせずに直接代入したりする、凡ミスがあ�
 コードテスト対策：'配列の合計値（reduce）'の学習<br>
 
 【コード】<br>
+
 ```
 // 6: 共通部分
 function intersection(a, b) {
@@ -119,9 +143,8 @@ Array.isArray()で配列かどうかを判定<br>
 Object.keyでキーを取得<br>
 reduceは(sum,n) => sum + nをつかう。<br>
 
+### 6月10日
 
-
-### 6月10日 
 【やったこと】<br>
 コードテスト対策：'Setの使い方'の学習<br>
 コードテスト対策：'文字列を逆順に'の学習<br>
@@ -130,6 +153,7 @@ reduceは(sum,n) => sum + nをつかう。<br>
 コードテスト対策：'FazzBizz'の学習<br>
 
 【コード】<br>
+
 ```
 Set
 return [...new Set(arr)];
@@ -150,8 +174,8 @@ Setを利用することで、簡潔、拘束に重複を消すことができ�
 最頻値は、値があれば１，ないければ０を入れるというのを(map[n] || 0) + 1で表現している。<br>
 配列同士の共通を出す時には、片方をSetにして、has()で判定することで、表現している。
 
+### 6月9日
 
-### 6月9日 
 【やったこと】<br>
 Udemy NewReact講座：`不要なタグを出力しないFragmentの使い方`の学習<br>
 Udemy NewReact講座：`JSX内でJSコードを実行してみよう`の学習<br>
@@ -162,14 +186,15 @@ Udemy NewReact講座：`propsにいろいろな値を渡してみよう`の学�
 Fragmentを使うことで、divなどを使わなくても、複数の要素を返せることを学んだ。<br>
 Propsを利用することで、親から子へデータを渡せることを学んだ。<br>
 
+### 6月8日
 
-### 6月8日 
 【やったこと】<br>
 Udemy NewReact講座：`Reactプロジェクトノ作成方法`の学習<br>
 Udemy NewReact講座：`コンポーネントにスタイルを当ててみよう`の学習<br>
 Udemy NewReact講座：`コンポーネントの分割方法`の学習<br>
 
 【コード】<br>
+
 ```
 const Child = () => {
     return (
@@ -183,14 +208,16 @@ const Child = () => {
 【学び・Why】<br>
 classをつけるときには、HTMLのときはclassのみで良かったが、jsxでは予約語になっているので、classNameとする。<br>
 
-### 6月5日 
+### 6月5日
+
 【やったこと】<br>
 Udemy NewReact講座：`Reactコンポーネントとはなに？`の学習<br>
 
 【学び・Why】<br>
 コンポーネントを使用することで、再利用性を高めて保守性も高めている
 
-### 6月4日 
+### 6月4日
+
 【やったこと】<br>
 Udemy NewReact講座：`なぜReactなのか`の学習<br>
 Udemy NewReact講座：`コースで使用するVSCodeの拡張機能を準備しよう`の学習<br>
@@ -204,7 +231,8 @@ Reactとは、JSのライブラリで現在最も使われるモダンな技術�
 Reactはコンポーネント単位で画面を分割して開発するもの。<br>
 State管理によって画面を自動的に更新できるため、DOMを直接いじる必要が少なくなる<br>
 
-### 6月3日 
+### 6月3日
+
 【やったこと】<br>
 Udemy React講座：`ReactでFormを作ろう`の学習開始<br>
 Udemy React講座：`制御コンポーネント`の学習<br>
@@ -224,6 +252,7 @@ Udemy React講座：WevDevelopmentBootcapmのReact学習終了<br>
 自己学習 成果物作成:いままでならったReactの知識を使い開発<br>
 
 【コード】<br>
+
 ```
 react-hook-form 抜粋
 import { useForm } from "react-hook-form";
@@ -238,7 +267,7 @@ export default function RHFForm() {
         <form onSubmit={handleSubmit(onSubmit)}>
             <input defaultValue="test" {...register("example")} />
             <input {...register("exampleRequired", { required: true })} />
-            
+
             {errors.exampleRequired && <span>This field is required</span>}
             <input type="submit" />
         </form>
@@ -270,7 +299,8 @@ React,JS,React Hook Form,axios,uuidを使った<br>
 作りながらコンポーネントの責務や、どこでState管理するかなどを考えてしまったので、効率的には作成できなかった<br>
 https://github.com/ReitaMorimune1014/react-task-app
 
-### 6月2日 
+### 6月2日
+
 【やったこと】<br>
 Udemy React講座：`コンポーネント設計`の学習開始<br>
 Udemy React講座：`Lucky7の紹介`の学習<br>
@@ -283,6 +313,7 @@ Udemy React講座：`Stateを更新する関数をPropsに渡す`の学習<br>
 Udemy React講座：`Stateを更新する関数を使いこなそう`の学習<br>
 
 【コード】<br>
+
 ```
 export default function BoxGrid() {
     const [boxes,setBoxes] = useState([false,false,false,false,false,false])
@@ -301,7 +332,7 @@ export default function BoxGrid() {
     return (
         <div>
             {boxes.map((box, index) => (
-                <Box key={index} 
+                <Box key={index}
                 toggle={() => toggleBox(index)}
                 isActive={box}/>
             ))}
@@ -315,7 +346,8 @@ export default function BoxGrid() {
 この設計により、UIと制御を分けることができ、責務が明確になっている。<br>
 上のコードでいうと、下位コンポーネントBoxを呼ぶときに、booleanや関数を渡している。<br>
 
-### 6月1日 
+### 6月1日
+
 【やったこと】<br>
 Udemy React講座：`Color Box演習問題`の学習<br>
 Udemy React講座：`Stateを関数で更新する`の学習<br>
@@ -330,6 +362,7 @@ Udemy React講座：`配列内の全要素を更新する`の学習<br>
 Udemy React講座：`スコアキーパー演習`の学習<br>
 
 【コード】<br>
+
 ```
 import {v4 as uuid} from 'uuid'
 import { useState } from 'react'
