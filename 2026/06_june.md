@@ -1,4 +1,19 @@
 ## 📅 2026年6月の記録
+### 6月18日 
+【やったこと】<br>
+Udemy NewReact講座：`外部CSSのimpoetを使ったスタイリング`の学習<br>
+Udemy NewReact講座：`CSS Modulesを使ったスタイリング`の学習<br>
+Udemy NewReact講座：`CSS-in-Jsを使ったスタイリング`の学習<br>
+Udemy NewReact講座：`まとめ Reactでのスタイルノ適用方法`の学習<br>
+
+【一言で言うと】<br>
+ReactでCSSをつける方法は複数あり、CSS-in-JSはファイル分割が不要で見通しが良い一方、
+実行時コストがあるため、近年はCSS ModulesやTailwindに採用がシフトしている
+
+【学び・Why】<br>
+個人開発や、小規模の場合CSS Modulesがよい、デザインシステムを厳密に管理するならCss-in-Jsを使う<br>
+
+
 ### 6月17日 
 【やったこと】<br>
 業界理解：`SierとSaaSの違い`
