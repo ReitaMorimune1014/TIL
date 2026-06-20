@@ -1,4 +1,19 @@
 ## 📅 2026年6月の記録
+### 6月20日 
+【やったこと】<br>
+Udemy NewReact講座：`createPortal モーダルの作り方`の学習<br>
+Udemy NewReact講座：`refでDOMを直接操作してみよう`の学習<br>
+Udemy NewReact講座：`refとは？refとstateの違い`の学習<br>
+Udemy NewReact講座：`他のコンポーネントノDOMにアクセスする方法`の学習<br>
+Udemy NewReact講座：`練習 refの使い方`の学習<br>
+
+【一言で言うと】<br>
+refとは、再レンダリングを発生せずに値を保持できるもの。<br>
+
+【学び・Why】<br>
+stateとrefの違いは、画面に反映させるかしないか<br>
+stateは、画面に反映させる<br>
+
 ### 6月18日 
 【やったこと】<br>
 Udemy NewReact講座：`外部CSSのimpoetを使ったスタイリング`の学習<br>
