@@ -1,4 +1,18 @@
 ## 📅 2026年6月の記録
+### 6月25日 
+【やったこと】<br>
+Udemy NewReact講座：`useReducer`の学習<br>
+Udemy NewReact講座：`useReducerとuseStateの違い`の学習<br>
+Udemy NewReact講座：`useReducerとuseStateの違い`の学習<br>
+
+【一言で言うと】<br>
+useReducerは状態の更新のロジックをコンポーネントの外に出すことで、純粋関数として扱えるHook
+
+【学び・Why】<br>
+■ useReducerの基本構造
+- `const [state, dispatch] = useReducer(reducer, initialState)`
+reducerは、同じstateと同じactionを渡せば必ず同じ結果を返す純粋関数
+
 ### 6月23日 
 【やったこと】<br>
 Udemy NewReact講座：`関数型プログラミングとは`の学習<br>
