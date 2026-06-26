@@ -1,4 +1,13 @@
 ## 📅 2026年6月の記録
+### 6月26日 
+【やったこと】<br>
+Udemy NewReact講座：`useReducer練習`の学習<br>
+Udemy NewReact講座：`useContextでグローバルな値を管理しよう`の学習<br>
+
+【学び・Why】<br>
+親から孫にpropsをバケツリレーする問題を解消するために使われるもの<br>
+`const { state, dispatch } = useContext(CountContext);`
+
 ### 6月25日 
 【やったこと】<br>
 Udemy NewReact講座：`useReducer`の学習<br>
