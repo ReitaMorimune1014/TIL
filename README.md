@@ -1,7 +1,7 @@
 # TIL (Today I Learned) - 森宗 伶太の学習記録
  
 記録開始から
-<b><span style="font-size: 24px;"><!-- DAYS -->112<!-- /DAYS --></span></b>
+<b><span style="font-size: 24px;"><!-- DAYS -->113<!-- /DAYS --></span></b>
 日目 🔥
 
 ---
