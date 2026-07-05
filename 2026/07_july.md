@@ -1,4 +1,19 @@
 ## 📅 2026年7月の記録
+### 7月4日 
+【やったこと】<br>
+Udemy NewReact講座：` useContextを使う際の注意点`の学習<br>
+Udemy NewReact講座：` useContextとuseReducerを組み合わせて`の学習<br>
+
+【コード】<br>
+```
+const StateContext = createContext();
+const DispatchContext = createContext();
+```
+
+【学び・Why】<br>
+ContextのProviderに値を渡した値が変わると、useContextでそのcontextを参照している全コンポーネントが再レンダリングされてしまう。<br>
+そのため、Contextを用途ごとに分割する<br>
+
 ### 7月3日 
 【やったこと】<br>
 Udemy NewReact講座：`useContextのリファクタリングをしてみよう`の学習<br>
