@@ -1,4 +1,25 @@
 ## 📅 2026年9月の記録
+### 9月5日 
+【やったこと】<br>
+Udemy NewReact講座：`useEffectの実行順を意識して実装してみよう`の学習<br>
+Udemy NewReact講座：`独自のフックを作成してみよう`の学習<br>
+
+【コード】<br>
+```
+カスタムフック
+const = useTimer = () => {
+  const [time, setTime] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+
+  useEffect(() => {
+    let intervalId = null;
+```
+
+【学び・Why】<br>
+useStateなどのHookを含むものを関数として切り出すことで、独自のフックを作ることができる。<br>
+このフックを作成する理由は、カプセル化できること、再利用可能でできるためである。<br>
+今回でいうと、タイマーの処理を別関数に切り出したので、useTimerと命名している。<br>
+
 ### 9月4日 
 【やったこと】<br>
 HRクラウド：`非同期処理の設計でのミス`の学習<br>
